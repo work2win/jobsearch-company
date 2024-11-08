@@ -49,7 +49,6 @@ public class CompanyController {
 	@ResponseStatus(HttpStatus.CREATED)
 	@PostMapping("company")
 	public Company addCompany(@Valid @RequestBody Company company) {
-		System.out.println(company);
 		return companyRepository.save(company);	
 	}
 	
